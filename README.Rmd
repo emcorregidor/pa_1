@@ -1,0 +1,39 @@
+---
+output: github_document
+---
+
+# pa_1
+**Paso 1.**
+```{r}
+# Assigning values to objects
+
+dur_hablo_unstressed <- 0.2979
+dur_hablo_stressed <- 0.3395
+dur_o_unstressed <- 0.0706
+dur_o_stressed <- 0.0927
+int_o_unstressed <- 73.5658
+int_o_stressed <- 72.9175
+f0_o_unstressed <- 223.4906
+f0_o_stressed <- 140.5478
+```
+
+**Paso 2.**
+```{r}
+# Performing basic math operations
+
+# The difference in ms between “hablo” and “habló”
+dur_hablo_unstressed - dur_hablo_stressed
+
+# The difference in ms between the stressed and unstressed [o]
+dur_o_stressed - dur_o_unstressed
+
+# The difference in intensity between the stressed and unstressed [o]
+int_o_stressed - int_o_unstressed
+
+# The difference in F0 between the stressed and unstressed [o]
+f0_o_stressed - f0_o_unstressed
+```
+
+**Paso 3.** *Summarizing observations.*
+
+Out of the four math operations run, three came up negative. The only positive one is the difference between the stressed and unstressed [o]. This might be given the unaccuracy of the measurements taken (probably not at the exact right chucnk they needed to be taken). More practice with Praat is needed to get familiar with the spectogram.
